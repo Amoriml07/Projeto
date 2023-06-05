@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
+  <title>Gerador de senhas</title>
+</head>
+<body>
+    <footer>
+        <h1>Gerador de Senhas online</h1>
+    </footer>
+  <div class="generator">
+    <h1 class="generator-title">Gerador de Senhas</h1>
+    <div class="generator-result">
+      <span class="generator-password" id="result"></span>
+      <button class="generator-copy-button" id="copy-btn">
+        <i class="far fa-clipboard"></i>
+      </button>
+    </div>
+    <div class="generator-settings">
+      <div class="generator-setting">
+        <label for="length">Número de Caracteres</label>
+        <input type="number" name="length" id="length" min="4" max="15" value="15">
+      </div>
+      <div class="generator-setting">
+        <label for="uppercase">Incluir Letras Maiúsculas</label>
+        <input type="checkbox" name="uppercase" id="uppercase" checked>
+      </div>
+      <div class="generator-setting">
+        <label for="lowercase">Incluir Letras minusculas</label>
+        <input type="checkbox" name="lowercase" id="lowercase" checked>
+      </div>
+      <div class="generator-setting">
+        <label for="numbers">Incluir Números</label>
+        <input type="checkbox" name="numbers" id="numbers" checked>
+      </div>
+      <div class="generator-setting">
+        <label for="symbols">Incluir Simbolos e Caracteres Especias</label>
+      <input type="checkbox" name="symbols" id="symbols" checked>
+      </div>
+    </div>
+    <button class="generator-generate-button" id="generate-btn">
+     Gerar Senha
+    </button>
+  </div>
+  <div class="toast" id="toast"></div>
+</body>
+</html>
